@@ -16,7 +16,7 @@
   
 
 
-  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
 body {
   overflow-x: hidden;
@@ -69,6 +69,8 @@ body {
     font-size: 20px;
     line-height: 52px;
     text-align: center;
+    padding-bottom: 15px
+
   }
   
   #sidenav header a {
@@ -91,7 +93,7 @@ body {
     border-bottom: 1px solid #455A64;
     color: #CFD8DC;
     font-size: 18px;
-    padding: 40px 24px;
+    padding: 20px 24px;
     
   }
   
@@ -110,3 +112,22 @@ body {
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
+
+
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #eeeeee;
+    border-radius: 0.3rem;
+    padding-top: 50px
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+  }
+  
