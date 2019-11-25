@@ -12,109 +12,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0.0rem 1rem;
-  }
-  
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-
-body {
-  overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
 }
 
-
-  /* The sidebar menu */
-
-#viewport {
-    padding-left: 250px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}  
-#content {
-    width: 100%;
-    position: relative;
-    margin-right: 0;
-}
-
-#sidenav {
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    width: 250px;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: rgb(31, 94, 136);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  
-  /* The navigation menu links */
-  #sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-
-  #sidenav header {
-    background-color: #16435a;
-    font-size: 20px;
-    line-height: 52px;
-    text-align: center;
-    padding-bottom: 15px
-
-  }
-  
-  #sidenav header a {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-  }
-  
-  #sidenav header a:hover {
-    color: #fff;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-  #sidenav .nav a{
-    background: none;
-    border-bottom: 1px solid #455A64;
-    color: #CFD8DC;
-    font-size: 18px;
-    padding: 20px 24px;
-    
-  }
-  
-  #sidenav .nav a:hover{
-    background: none;
-    color: #ECEFF1;
-  }
-  
-  #sidenav .nav a i{
-    margin-right: 16px;
-  } */
-
-  
-  /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
-
-
-  .jumbotron {
+.jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #eeeeee;
@@ -122,22 +22,114 @@ body {
     padding-top: 50px;
     padding-bottom: 5px;
     height: auto;
-  }
+}
 
-  .container-fluid {
+.container-fluid {
     width: 100%;
     padding-right: 50px;
     padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 60px;
-  }
-  
-  .container {
+}
+
+.container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 150px;
+}
+  
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+
+  /* The sidebar menu */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
   }
+
+
+.sidenav header {
+    background-color: #16435a;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+    padding-bottom: 15px
+
+}
+  
+.sidenav {
+    left: 250px;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgb(31, 94, 136);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 20px;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+}
+
+.sidenav header a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.sidenav header a:hover {
+    color: #fff;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .nav a:hover {
+    background: none;
+    color
+    : #ECEFF1;
+}
+.sidenav .nav a{
+    background: none;
+    border-bottom: 1px solid #455A64;
+    color: #CFD8DC;
+    font-size: 18px;
+    padding: 20px 24px;
+
+}
+
+  
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 35px;}
+    .sidenav a {font-size: 18px;}
+}
