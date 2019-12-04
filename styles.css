@@ -33,6 +33,14 @@
     margin-left: auto;
     padding-top: 170px;
 }
+.container-fluid-div {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 170px;
+}
 
 .container {
     width: 100%;
@@ -136,4 +144,44 @@ body {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 35px;}
     .sidenav a {font-size: 18px;}
+}
+
+.box-container { /* thanks Mitchel! */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 120px);
+    grid-gap: 1em;
+}
+
+.box-container > div { /* the child div to the .box-container will apply to all items */
+    background-color: grey;
+}
+
+.box-container > img {
+    top: 30px;
+    position: relative;
+    left: 55px;
+    display: box;
+    width: 60px;
+    height: 60px;
+}
+
+.another-box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+.another-box-container > div {
+    background-color: grey;
+    height: 550px;
+   
+}
+.another-box-container > img {
+    top: 120px;
+    left: 200px;
+    position: relative;
+    display: box;
+    width: 350px;
+    height: 300px;
 }
