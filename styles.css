@@ -1,5 +1,5 @@
 .navbar {
-    position: relative;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,6 +12,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0.0rem 1rem;
+    width: 100%;
 }
 
 .jumbotron {
@@ -25,12 +26,12 @@
 }
 
 .container-fluid {
-    width: 100%;
+    width: 70%;
     padding-right: 50px;
     padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 60px;
+    padding-top: 170px;
 }
 
 .container {
@@ -57,7 +58,7 @@ body {
 
 
 .sidenav header {
-    background-color: #16435a;
+    background-color: #0d4062;
     font-size: 20px;
     line-height: 52px;
     text-align: center;
@@ -71,12 +72,15 @@ body {
     width: 250px;
     position: fixed;
     z-index: 1000;
-    top: 0;
+    top: 97px;
     left: 0;
-    background-color: rgb(31, 94, 136);
+    background-color: #0d4062;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto; 
     padding-top: 20px;
+    /* overflow: hidden;
+    min-width: px;
+    padding-bottom: 60px; */
 }
 
 .content {
