@@ -59,6 +59,7 @@
     margin-left: auto;
     padding-top: 150px;
     color: rgb(189, 49, 49);
+    font-family: 'Roboto', sans-serif;
 }
   
 
@@ -204,7 +205,7 @@ body {
 }
 .last-box-container > div {
     background-color: grey;
-    height: 320px;
+    height: 350px;
    
 }
 .last-box-container > img {
@@ -213,7 +214,7 @@ body {
     position: relative;
     display: box;
     width: 350px;
-    height: 300px;
+    height: 330px;
 }
 
 .inline-div {
